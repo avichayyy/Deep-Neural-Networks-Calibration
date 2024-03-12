@@ -31,17 +31,33 @@ def load_data(file_name):
     """Returns a pandas dataframe from a csv file."""
     return pd.read_csv(file_name, header=None)
 
+    return combined_df# Function to combine CSV files back into one DataFrame
+def combine_csv(file_path):
+    # Initialize an empty list to store DataFrames
+    dfs = []
+
+    # Iterate over the split CSV files and read them into DataFrames
+    for i in range(1, 11):
+        if os.path.exists(os.path.join(file_path, f'{i}.csv')):
+            dfs.append(pd.read_csv(os.path.join(file_path, f'{i}.csv')))
+
+    # Concatenate the DataFrames
+    combined_df = pd.concat(dfs, ignore_index=True)
+
+    return combined_df
+
+
 # Load the model
 model_path = r"weights.best.basic_cnn.hdf5"
 model = load_model(model_path)
 
-X_test = pd.read_csv('test_data.csv')
+X_test = combine_csv(file_path='test_data')
 y_test = pd.read_csv('test_labels.csv')
 
 X_test = X_test.to_numpy()
 X_test = X_test.reshape(X_test.shape[0], 40, 174, 1)
 
-X_val = pd.read_csv('x_val.csv')
+X_val = combine_csv(file_path='val_data')
 y_val = pd.read_csv('y_val.csv')
 X_val = X_val.to_numpy()
 X_val = X_val.reshape(X_val.shape[0], 40, 174, 1)
