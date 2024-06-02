@@ -68,8 +68,6 @@ for i,row in tqdm(metadata.iterrows()):
 extracted_features_df=pd.DataFrame(extracted_features,columns=['feature', 'class'])
 extracted_features_df.head()
 
-label_encoder = LabelEncoder()
-
 X = np.array(extracted_features_df['feature'].tolist())
 y = np.array(extracted_features_df['class'].tolist())
 
