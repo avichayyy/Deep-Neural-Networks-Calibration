@@ -85,3 +85,38 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 | FSD50K        | 200            | 51,197       | No                |
 | Dcase2017     | 15             | 390          | Yes               |
 
+# Results
+
+### UrbanSound8K
+
+#### Gurbuz Network Results:
+
+![Gurbuz Network Results](path/to/your/image1.png)
+
+#### Nitish Network Results:
+
+![Nitish Network Results](path/to/your/image2.png)
+
+### ESC-50K
+
+#### Yament Network Results:
+
+![Yament Network Results](path/to/your/image3.png)
+
+#### Resnet Network Results:
+
+![Resnet Network Results](path/to/your/image4.png)
+
+### FSD-50K
+
+#### CNN Network Results:
+
+![CNN Network Results](path/to/your/image5.png)
+
+### Dcase-2017
+
+#### CNN Network Results:
+
+![CNN Network Results](path/to/your/image6.png)
+
+
