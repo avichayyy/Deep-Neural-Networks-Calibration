@@ -91,7 +91,8 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 #### Gurbuz Network Results:
 
-![Gurbuz Network Results](path/to/your/image1.png)
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/e77d112b-0e3a-40b1-b415-efd4964d6d43)
+
 
 #### Nitish Network Results:
 
