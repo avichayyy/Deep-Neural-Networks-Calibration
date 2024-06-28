@@ -140,9 +140,9 @@ ECE as a Function of Accuracy <br>
 
 ![ECE as function of Accuracy](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/08ef2a91-d9e5-4c71-a52f-d99f61f93c10)
  <br>
+ 
 ECE as a Function of Epochs - Fixed number of class <br>
-![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/478c9183-2200-414b-8f19-36f29eb001ab)
-
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/c7b1f54d-2535-4718-ae67-4fbbe562c58b)
 
  <br>
 ECE as a Function of Number of Class - Fixed Batch size <br>
