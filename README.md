@@ -17,14 +17,17 @@ In the literature, there are three main approaches to address the problem of cal
 2. **Using regularization during training:** These methods use regularization terms and generally modify the objective function to achieve better calibration of the model.
 3. **Reducing the model's uncertainty:** Although there is no unequivocal definition that can be quantified for "uncertainty" in networks, experiments have shown that increasing the number of samples can lead to better model performance and also reduce calibration.
 
-In our deep dive into the literature, we mainly focused on post-training methods. Here are some of the leading methods of this type described in the literature:
+In our deep dive into the literature, we mainly focused on post-training methods. <br>
+Here are some of the leading methods of this type described in the literature:
 
 ### Histogram Binning
 
 Histogram binning is a non-parametric method that calibrates the model by partitioning the probability space into bins and adjusting the predicted probabilities within each bin.
 
 **Formula:**
-$\[ P(x \in B_i) = \frac{|B_i|}{N} \]$
+```math
+[ P(x \in B_i) = \frac{|B_i|}{N} ]
+```
 Where $\( B_i \)$ is the number of samples in bin $\( i \)$, and $\( N \)$ is the total number of samples.
 
 ### Isotonic Regression
@@ -32,9 +35,9 @@ Where $\( B_i \)$ is the number of samples in bin $\( i \)$, and $\( N \)$ is th
 Isotonic regression is a non-parametric calibration method that fits a piecewise constant non-decreasing function to the predicted probabilities.
 
 **Formula:**
-
-$\hat{p}$ = \min_{\hat{p}_1 $\leq$ \hat{p}_2 $\leq$ $\ldots$ $\leq$ $\hat{p}_n}$ $\sum$_{i=1}^{n} $(y_i - \hat{p}_i)^2$
-
+```math
+\hat{p} = \min_{\hat{p}_1 \leq \hat{p}_2 \leq \ldots \leq \hat{p}_n} \sum_{i=1}^{n} (y_i - \hat{p}_i)^2
+```
 Where $\( y_i \)$ are the true labels and $\( \hat{p}_i \)$ are the predicted probabilities.
 
 ### Platt Calibration
@@ -42,7 +45,9 @@ Where $\( y_i \)$ are the true labels and $\( \hat{p}_i \)$ are the predicted pr
 Platt calibration uses logistic regression to map the predicted probabilities to calibrated probabilities.
 
 **Formula:**
-$\[ P(y=1|x) = \frac{1}{1 + \exp(Ax + B)} \]$
+```math
+[ P(y=1|x) = \frac{1}{1 + \exp(Ax + B)} ]
+```
 Where $\( A \)$ and $\( B \)$ are parameters learned from the validation set.
 
 ### Temperature Scaling
@@ -50,5 +55,7 @@ Where $\( A \)$ and $\( B \)$ are parameters learned from the validation set.
 Temperature scaling is a simple extension of Platt calibration, where a single parameter $\( T \)$ (temperature) is used to scale the logits before applying the softmax function.
 
 **Formula:**
-$\[ \sigma\left(\frac{z}{T}\right) \]$
+```math
+[ \sigma\left(\frac{z}{T}\right) ]
+```
 Where $\( z \)$ are the logits and $\( T \)$ is the temperature parameter.
