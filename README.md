@@ -122,3 +122,11 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 ![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/e59640da-8d27-4c27-bd62-cb0dee5e4466)
 
 
+# Conclusion
+### Observations on Calibration Issues in the Audio Field
+
+1. **Predicted Impact of Calibration Issues**: Calibration issues have been observed to significantly impact the audio field, aligning with earlier predictions.
+
+2. **Dataset Distribution and Network Calibration**: The calibration of networks appears to be particularly susceptible to variations in dataset distribution, highlighting its critical role in network performance.
+
+3. **Calibration Effects on Confidence Levels**: Networks often exhibit both over and under confidence, a phenomenon influenced by histogram binning. Implementing Iso or Histogram calibration methods has shown promise in enhancing both accuracy and calibration reliability.
