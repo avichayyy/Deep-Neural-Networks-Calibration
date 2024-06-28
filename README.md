@@ -119,6 +119,6 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 #### CNN Network Results:
 
-![CNN Network Results](path/to/your/image6.png)
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/e59640da-8d27-4c27-bd62-cb0dee5e4466)
 
 
