@@ -103,7 +103,7 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 #### Yament Network Results:
 
-![Yament Network Results](path/to/your/image3.png)
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/c5db0792-9a46-42c4-90e0-3a6ad85e6b80)
 
 #### Resnet Network Results:
 
