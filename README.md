@@ -143,5 +143,5 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 3. **Calibration Effects on Confidence Levels**: Networks often exhibit both over and under confidence, a phenomenon influenced by histogram binning. Implementing Iso or Histogram calibration methods has shown promise in enhancing both accuracy and calibration reliability.
 
-4. **Hyperparameters and Calibration**: The decision of hyperparameters can profoundly influence network calibration. For instance, parameters like learning rate, batch size, and layer configurations can impact the calibration process, often requiring fine-tuning to achieve optimal performance across different datasets and conditions.
+4. **Hyperparameters and Calibration**: The decision of hyperparameters can profoundly influence network calibration. For instance, parameters like number of epochs, batch size, and layer configurations can impact the calibration process, often requiring fine-tuning to achieve optimal performance across different datasets and conditions.
 
