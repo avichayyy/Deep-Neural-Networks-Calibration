@@ -135,17 +135,18 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 *Self trained networks
 
 # Results - Effect of Certian Parameters on ECEC
+ <br>
+ECE as a Function of Accuracy <br>
 
-ECE as a Function of Accuracy
 ![ECE as function of Accuracy](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/08ef2a91-d9e5-4c71-a52f-d99f61f93c10)
-
-ECE as a Function of Epochs - Fixed number of class
+ <br>
+ECE as a Function of Epochs - Fixed number of class <br>
 ![Fixed Class - ECE as function of epoch](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/0b84b458-dd09-4189-894b-38ef18209402)
-
-ECE as a Function of Number of Class - Fixed Batch size
+ <br>
+ECE as a Function of Number of Class - Fixed Batch size <br>
 ![Fixed Batch - ECE as function of class](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/05056786-85ff-49c8-bfe6-527b8cf2fc73)
 
-
+ <br>
 # Conclusion
 ### Observations on Calibration Issues in the Audio Field
 
