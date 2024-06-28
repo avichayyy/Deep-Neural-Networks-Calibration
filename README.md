@@ -129,8 +129,10 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 | Urban8k      | Nitish   | 88.24%   | 2.2%             | Under                 | 1.5%             |
 | ESC-50       | Resnet*  | 78.3%    | 13.4%            | Over                  | 4.9%             |
 | ESC-50       | YamNet   | 86%      | 2.6%             | Over                  | 2.2%             |
-| FSD-50k      | CNN      | 87.19%   | 6.38%            | Over                  | 1.25%            |
-| Dcase-2017   | CNN      | 91.13%   | 4.41%            | Over                  | 2.39%            |
+| FSD-50k      | CNN*     | 87.19%   | 6.38%            | Over                  | 1.25%            |
+| Dcase-2017   | CNN*     | 91.13%   | 4.41%            | Over                  | 2.39%            |
+<br>
+*Self trained networks
 
 # Conclusion
 ### Observations on Calibration Issues in the Audio Field
