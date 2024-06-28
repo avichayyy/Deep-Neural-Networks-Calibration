@@ -1,0 +1,11 @@
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.1.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.2.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.3.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.4.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.5.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.6.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.7.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.8.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.9.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.audio.10.zip?download=1 &
+wget https://zenodo.org/records/400515/files/TUT-acoustic-scenes-2017-development.meta.zip?download=1 &
