@@ -5,7 +5,10 @@ import numpy as np
 from matplotlib import pyplot as plt
 from netcal.metrics import ECE, MCE, ACE
 from netcal.presentation import ReliabilityDiagram
+from netcal.scaling import TemperatureScaling
 from sklearn.metrics import classification_report, accuracy_score
+from netcal.binning import IsotonicRegression
+
 import librosa
 
 
@@ -78,3 +81,71 @@ diagram = ReliabilityDiagram(n_bins)
 diagram = ReliabilityDiagram(n_bins)
 diagram.plot(model_probabilities, model_groundtruth_arg, title_suffix='Uncalibrated Model')  # visualize miscalibration of uncalibrated
 plt.show()
+
+
+# Temperature Scaling
+temperature = TemperatureScaling()
+temperature.fit(model_probabilities, model_groundtruth_arg)
+# Calculate error metrices
+ece = ECE(n_bins)
+ece_uncalibrated_score = ece.measure(model_probabilities, model_groundtruth_arg)
+mce = MCE(n_bins)
+mce_uncalibrated_score = mce.measure(model_probabilities, model_groundtruth_arg)
+ace = ACE(n_bins)
+ace_uncalibrated_score = ace.measure(model_probabilities, model_groundtruth_arg)
+print(f'Uncalibrated Accuracy: {model_accuracy}, ECE: {ece_uncalibrated_score}, MCE: {mce_uncalibrated_score}, ACE: {ace_uncalibrated_score}')
+
+
+# T=1.1
+temperature.weights[0] = 1.75
+calibrated_1_25 = temperature.transform(model_probabilities)
+# Calculate error metrices
+ece_calibrated_score_1_25 = ece.measure(calibrated_1_25, model_groundtruth_arg)
+mce_calibrated_score_1_25 = mce.measure(calibrated_1_25, model_groundtruth_arg)
+ace_calibrated_score_1_25 = ace.measure(calibrated_1_25, model_groundtruth_arg)
+print(f'Temp Scaling 1.25 Accuracy: {model_accuracy}, ECE: {ece_calibrated_score_1_25}, MCE: {mce_calibrated_score_1_25}, ACE: {ace_calibrated_score_1_25}')
+
+# T=1.13
+temperature.weights[0] = 1.78
+calibrated_1_1 = temperature.transform(model_probabilities)
+# Calculate error metrices
+ece_calibrated_score_1_1 = ece.measure(calibrated_1_1, model_groundtruth_arg)
+mce_calibrated_score_1_1 = mce.measure(calibrated_1_1, model_groundtruth_arg)
+ace_calibrated_score_1_1 = ace.measure(calibrated_1_1, model_groundtruth_arg)
+print(f'Temp Scaling 1.1 Accuracy: {model_accuracy}, ECE: {ece_calibrated_score_1_1}, MCE: {mce_calibrated_score_1_1}, ACE: {ace_calibrated_score_1_1}')
+
+# T=1.15
+temperature.weights[0] = 1.82
+calibrated_1_19 = temperature.transform(model_probabilities)
+# Calculate error metrices
+ece_calibrated_score_1_19 = ece.measure(calibrated_1_19, model_groundtruth_arg)
+mce_calibrated_score_1_19 = mce.measure(calibrated_1_19, model_groundtruth_arg)
+ace_calibrated_score_1_19 = ace.measure(calibrated_1_19, model_groundtruth_arg)
+print(f'Temp Scaling 1.19 Accuracy: {model_accuracy}, ECE: {ece_calibrated_score_1_19}, MCE: {mce_calibrated_score_1_19}, ACE: {ace_calibrated_score_1_19}')
+
+
+# Isotonic Regression
+iso = IsotonicRegression()
+iso.fit(model_probabilities, model_groundtruth_arg)
+iso_probabilities = iso.transform(model_probabilities)
+# Calculate error metrices
+ece_iso_calibrated_score = ece.measure(iso_probabilities, model_groundtruth_arg)
+mce_iso_calibrated_score = mce.measure(iso_probabilities, model_groundtruth_arg)
+ace_iso_calibrated_score = ace.measure(iso_probabilities, model_groundtruth_arg)
+# Plot
+iso_prediction_arg = np.argmax(iso_probabilities, axis=1)
+iso_acc = accuracy_score(iso_prediction_arg, model_groundtruth_arg)
+print(f'Isotonic Regression Accuracy: {iso_acc}, ECE: {ece_iso_calibrated_score}, MCE: {mce_iso_calibrated_score}, ACE: {ace_iso_calibrated_score}')
+
+# Plot all Temp scaling and Uncalibrated
+diagram = ReliabilityDiagram(n_bins)
+
+diagram = ReliabilityDiagram(n_bins)
+diagram.plot(model_probabilities, model_groundtruth_arg, title_suffix='Uncalibrated Model')  # visualize miscalibration of uncalibrated
+diagram.plot(calibrated_1_25, model_groundtruth_arg, title_suffix=f'Temperature Scaling - T={0.875}')   # visualize miscalibration of calibrated
+#diagram.plot(calibrated_1_1, model_groundtruth_arg, title_suffix=f'Temperature Scaling - T={0.98}')   # visualize miscalibration of calibrated
+#diagram.plot(calibrated_1_19, model_groundtruth_arg, title_suffix=f'Temperature Scaling - T={0.97}')   # visualize miscalibration of calibrated
+diagram.plot(iso_probabilities, model_groundtruth_arg, title_suffix=f'Isotonic Regression')   # visualize miscalibration of calibrated
+
+plt.show()
+
