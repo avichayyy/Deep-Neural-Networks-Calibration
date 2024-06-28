@@ -96,7 +96,8 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 #### Nitish Network Results:
 
-![Nitish Network Results](path/to/your/image2.png)
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/72d29c49-59d2-48db-a05f-91bbfbe4ffee)
+
 
 ### ESC-50K
 
