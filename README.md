@@ -11,7 +11,6 @@ This project investigates the phenomenon of miscalibration in Deep Neural Networ
 We have tested several architectures of DNNs on several audio datasets to see if they suffer from miscalibration and found that the problem exists in audio datasets as well. Furthermore, the same results applied to image classification DNNs can be applied to audio DNNs. <br>
 
 # Background
-## Background
 
 In the literature, there are three main approaches to address the problem of calibration:
 1. Using methods after the training process: These methods use a validation set to perform calibration on them. The assumption here is that the validation set and the training set are taken from the same sample.
