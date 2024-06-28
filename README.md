@@ -32,7 +32,7 @@ Where $\( B_i \)$ is the number of samples in bin $\( i \)$, and $\( N \)$ is th
 Isotonic regression is a non-parametric calibration method that fits a piecewise constant non-decreasing function to the predicted probabilities.
 
 **Formula:**
-$\[ \hat{p}$ = \min_{$\hat{p}$_1 \leq \hat{p}_2 \leq \ldots \leq \hat{p}_n} \sum_{i=1}^{n} (y_i - \hat{p}_i)^2 \]
+$\[ \hat{p}$ = $\min$_{\hat{p}_1 \leq \hat{p}_2 \leq \ldots \leq \hat{p}_n} \sum_{i=1}^{n} (y_i - \hat{p}_i)^2 \]
 Where $\( y_i \)$ are the true labels and $\( \hat{p}_i \)$ are the predicted probabilities.
 
 ### Platt Calibration
