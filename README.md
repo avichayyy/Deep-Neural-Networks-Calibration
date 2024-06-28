@@ -107,7 +107,7 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 #### Resnet Network Results:
 
-![Resnet Network Results](path/to/your/image4.png)
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/15b0029e-3945-4501-ab15-ea62af52775a)
 
 ### FSD-50K
 
