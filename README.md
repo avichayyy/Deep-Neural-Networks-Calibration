@@ -24,7 +24,7 @@ In our deep dive into the literature, we mainly focused on post-training methods
 Histogram binning is a non-parametric method that calibrates the model by partitioning the probability space into bins and adjusting the predicted probabilities within each bin.
 
 **Formula:**
-\[ P(x \in B_i) = \frac{|B_i|}{N} \]
+$'\[ P(x \in B_i) = \frac{|B_i|}{N} \]'$
 Where \( B_i \) is the number of samples in bin \( i \), and \( N \) is the total number of samples.
 
 ### Isotonic Regression
