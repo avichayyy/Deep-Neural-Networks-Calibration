@@ -85,7 +85,7 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 | FSD50K        | 200            | 51,197       | No                |
 | Dcase2017     | 15             | 390          | Yes               |
 
-# Results
+# Results - Graphs
 
 ### UrbanSound8K
 
@@ -121,6 +121,16 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 ![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/e59640da-8d27-4c27-bd62-cb0dee5e4466)
 
+# Results - Miss Calibration Summary
+
+| Dataset      | Network  | Accuracy | Uncalibrated ECE | Over/Under Confidence | Temp Scaling ECE |
+|--------------|----------|----------|------------------|-----------------------|------------------|
+| Urban8k      | Gurbuz   | 91.64%   | 1.8%             | Under                 | 1.3%             |
+| Urban8k      | Nitish   | 88.24%   | 2.2%             | Under                 | 1.5%             |
+| ESC-50       | Resnet*  | 78.3%    | 13.4%            | Over                  | 4.9%             |
+| ESC-50       | YamNet   | 86%      | 2.6%             | Over                  | 2.2%             |
+| FSD-50k      | CNN      | 87.19%   | 6.38%            | Over                  | 1.25%            |
+| Dcase-2017   | CNN      | 91.13%   | 4.41%            | Over                  | 2.39%            |
 
 # Conclusion
 ### Observations on Calibration Issues in the Audio Field
