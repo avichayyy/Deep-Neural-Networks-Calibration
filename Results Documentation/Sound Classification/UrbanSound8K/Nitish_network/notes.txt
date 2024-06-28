@@ -1,1 +1,0 @@
-t=1.15 looks the best fitting, but 1.13 have a better ece.

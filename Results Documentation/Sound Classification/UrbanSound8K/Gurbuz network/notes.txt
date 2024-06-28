@@ -1,4 +1,0 @@
-T=1.1 Confidence line look closer thhan 1.19
-but ECE is better on 1.19
-need to remember ECE sum on total errors with ABSOLUTE!!!
-confidence dosent use Absolute and it deduct if u have under + over confidence bins
