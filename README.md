@@ -32,21 +32,21 @@ Where $\( B_i \)$ is the number of samples in bin $\( i \)$, and $\( N \)$ is th
 Isotonic regression is a non-parametric calibration method that fits a piecewise constant non-decreasing function to the predicted probabilities.
 
 **Formula:**
-\[ \hat{p} = \min_{\hat{p}_1 \leq \hat{p}_2 \leq \ldots \leq \hat{p}_n} \sum_{i=1}^{n} (y_i - \hat{p}_i)^2 \]
-Where \( y_i \) are the true labels and \( \hat{p}_i \) are the predicted probabilities.
+$\[ \hat{p} = \min_{\hat{p}_1 \leq \hat{p}_2 \leq \ldots \leq \hat{p}_n} \sum_{i=1}^{n} (y_i - \hat{p}_i)^2 \]$
+Where $\( y_i \)$ are the true labels and $\( \hat{p}_i \)$ are the predicted probabilities.
 
 ### Platt Calibration
 
 Platt calibration uses logistic regression to map the predicted probabilities to calibrated probabilities.
 
 **Formula:**
-\[ P(y=1|x) = \frac{1}{1 + \exp(Ax + B)} \]
-Where \( A \) and \( B \) are parameters learned from the validation set.
+$\[ P(y=1|x) = \frac{1}{1 + \exp(Ax + B)} \]$
+Where $\( A \)$ and $\( B \)$ are parameters learned from the validation set.
 
 ### Temperature Scaling
 
-Temperature scaling is a simple extension of Platt calibration, where a single parameter \( T \) (temperature) is used to scale the logits before applying the softmax function.
+Temperature scaling is a simple extension of Platt calibration, where a single parameter $\( T \)$ (temperature) is used to scale the logits before applying the softmax function.
 
 **Formula:**
-\[ \sigma\left(\frac{z}{T}\right) \]
-Where \( z \) are the logits and \( T \) is the temperature parameter.
+$\[ \sigma\left(\frac{z}{T}\right) \]$
+Where $\( z \) are the logits and \( T \)$ is the temperature parameter.
