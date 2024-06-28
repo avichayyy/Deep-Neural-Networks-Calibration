@@ -144,12 +144,11 @@ ECE as a Function of Accuracy <br>
 ECE as a Function of Epochs - Fixed number of class <br>
 ![Fixed Class - ECE as function of epoch](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/ebdda787-bc09-48d3-9bdd-07d9a3e9db8d)
 
-
- <br>
+<br>
 ECE as a Function of Number of Class - Fixed Batch size <br>
 ![Fixed Batch - ECE as function of class](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/08961ff6-aa55-4e2e-8bdd-7d535390b51a)
 
- <br>
+<br>
 # Conclusion
 ### Observations on Calibration Issues in the Audio Field
 
