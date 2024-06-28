@@ -59,3 +59,29 @@ Temperature scaling is a simple extension of Platt calibration, where a single p
 [ \sigma\left(\frac{z}{T}\right) ]
 ```
 Where $\( z \)$ are the logits and $\( T \)$ is the temperature parameter.
+
+# Datasets Used
+
+We utilized four prominent audio datasets for our experiments: UrbanSound8k, ESC50, FSD50K, and Dcase2017. Below is a brief description of each:
+
+**UrbanSound8k**:  
+UrbanSound8k is a dataset containing 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes, such as air conditioners, car horns, and children playing. The dataset is balanced in terms of class representation.
+
+**ESC50**:  
+ESC50 is a labeled collection of 2000 environmental audio recordings, prearranged into 50 classes (40 examples per class), including natural sounds like animal noises, water sounds, and human noises. The dataset is balanced across its classes.
+
+**FSD50K**:  
+FSD50K is an open dataset of human-labeled sound events containing 51,197 recordings (total duration 108.3 hours) distributed in 200 classes drawn from the AudioSet ontology. This dataset is not balanced, and some classes have significantly more samples than others.
+
+**Dcase2017**:  
+Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes and Events challenge. It includes recordings from 15 different acoustic scenes. The dataset consists of recordings that are balanced across classes.
+
+### Dataset Summary
+
+| Dataset Name  | Num of Classes | Data Samples | Balanced (Yes/No) |
+|---------------|----------------|--------------|-------------------|
+| UrbanSound8k  | 10             | 8732         | Yes               |
+| ESC50         | 50             | 2000         | Yes               |
+| FSD50K        | 200            | 51,197       | No                |
+| Dcase2017     | 15             | 390          | Yes               |
+
