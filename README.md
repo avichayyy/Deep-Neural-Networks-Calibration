@@ -1,2 +1,2 @@
 # Deep-Neural-Networks-Calibration
-Deep Neural Networks Calibration Project
+Repository for Deep Neural Network Calibration - Project A at the ECE Faculty at the Technion
