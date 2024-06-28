@@ -1,8 +1,7 @@
 # Deep-Neural-Networks-Calibration
 Repository for Deep Neural Network Calibration - Project A at the ECE Faculty at the Technion
 
-![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/43eae86a-7d54-4545-a6a3-76df6e32bfde)
-
+![image](https://github.com/avichayyy/Deep-Neural-Networks-Calibration/assets/129785797/9201769a-802a-4847-8584-aa45a09d2cf6)
 
 # About
 Deep Neural Networks (DNNs) are a type of learned functions which consist of multiple layers between the input and output layers. These layers consist of neurons, where each connection transfers data from one neuron in a lower layer to another in a higher layer. <br>
