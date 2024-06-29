@@ -157,3 +157,9 @@ Dcase2017 is a dataset for the Detection and Classification of Acoustic Scenes a
 
 4. **Hyperparameters and Calibration**: The decision of hyperparameters can profoundly influence network calibration. For instance, parameters like number of epochs, batch size, and layer configurations can impact the calibration process, often requiring fine-tuning to achieve optimal performance across different datasets and conditions.
 
+# References
+[1] 	Guo, Chuan, et al. "On calibration of modern neural networks." International conference on machine learning. PMLR, 2017. <br>
+[2] 	Gawlikowski, Jakob, et al. "A survey of uncertainty in deep neural networks." Artificial Intelligence Review 56.Suppl 1 (2023): 1513-1589.<br>
+[3] 	Küppers, Fabian, Jonas Schneider, and Anselm Haselhoff. "Parametric and multivariate uncertainty calibration for regression and object detection." European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2022.<br>
+[4] 	Guo, Chuan, et al. "On calibration of modern neural networks." International conference on machine learning. PMLR, 2017.
+
