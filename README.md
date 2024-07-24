@@ -1,4 +1,4 @@
-# Deep-Neural-Networks-Calibration
+# Deep Neural Networks Calibration For Audio
 Repository for Deep Neural Network Calibration - Project A at the ECE Faculty at the Technion. <br>
 This project is conducted by Avichay Ashur and Yonatan Leibovich, with the supervision of Yair Moshe.
 
